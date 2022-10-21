@@ -5,6 +5,20 @@ const image3 = document.querySelector('.container3')
 const image4 = document.querySelector('.container4')
 const image5 = document.querySelector('.container5')
 
+
+//// do zmiany dół 
+/*
+    removeActiveClass()
+    el.classList.add('active')
+
+
+    function removeActiveClass() {
+        images.forEach(klasa => {
+            images.classList.remove('active')
+        })
+    }
+*/
+
 images.forEach((el) => el.addEventListener('click', () => {
     el.classList.toggle('active')
     if(el.classList.contains('container1')){
