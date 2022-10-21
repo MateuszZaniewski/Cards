@@ -4,6 +4,7 @@ const image2 = document.querySelector('.container2')
 const image3 = document.querySelector('.container3')
 const image4 = document.querySelector('.container4')
 const image5 = document.querySelector('.container5')
+
 images.forEach((el) => el.addEventListener('click', () => {
     el.classList.toggle('active')
     if(el.classList.contains('container1')){
