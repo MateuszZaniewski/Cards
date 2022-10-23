@@ -9,11 +9,26 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="image__container container1"></div>
+        <div class="image__container container1 currentActive"></div>
         <div class="image__container container2"></div>
-        <div class="image__container container3 currentActive"></div>
+        <div class="image__container container3"></div>
         <div class="image__container container4"></div>
         <div class="image__container container5"></div>
+    </div>
+    <div class="controlPanel">
+        <span class="roundNumbers number1 activeRoundButton">1</span>
+        <span class="bar bar12"></span>
+        <span class="roundNumbers number2">2</span>
+        <span class="bar bar23"></span>
+        <span class="roundNumbers number3">3</span>
+        <span class="bar bar34"></span>
+        <span class="roundNumbers number4">4</span>
+        <span class="bar bar45"></span>
+        <span class="roundNumbers number5">5</span>
+    </div>
+    <div class="buttons">
+        <button class="button">Prev</button>
+        <button class="button" onclick="changeColor()">Next</button>
     </div>
 
     <script src="js/main.js"></script>
