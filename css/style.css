@@ -20,43 +20,31 @@ body {
 }
 
 .image__container{
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    width: 20%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.container1{
-    background-image: url('images/image1.jpg');
-    width: 20%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.image__container:nth-child(1){
+    background-image: url('images/image1.jpg')
 }
-.container2{
-    background-image: url('images/image2.jpg');
-    width: 20%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+.image__container:nth-child(2){
+    background-image: url('images/image2.jpg')
 }
-.container3{
-    background-image: url('images/image3.jpg');
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+.image__container:nth-child(3){
+    background-image: url('images/image3.jpg')
 }
-.container4{
-    background-image: url('images/image4.jpg');
-    width: 20%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+.image__container:nth-child(4){
+    background-image: url('images/image4.jpg')
 }
-.container5{
-    background-image: url('images/image5.jpg');
-    width: 20%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+.image__container:nth-child(5){
+    background-image: url('images/image5.jpg')
 }
 
 
@@ -67,9 +55,50 @@ body {
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
     animation-timing-function: linear;
+    width: 100%;
+}
+
+.currentActive {
+    width: 100%;
 }
 
 @keyframes spreadImage {
     from{width: 20%}
     to{width: 100%}
+}
+
+/* MOBILE to 600px */
+
+
+@media (max-width: 600px) {
+
+    .wrapper{
+        width: 100vw;
+        height: 70vh;
+        margin: 20% auto;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2vh;
+    }
+    
+    .image__container{
+        height: 30%;
+        width: 100%;
+    }
+
+    .currentActive {
+        height: 200%;
+    }
+
+    .active{
+        height: 200%;
+    }
+
+    @keyframes spreadImage {
+        from{height: 20%}
+        to{height: 200%}
+    }
+
+
 }
