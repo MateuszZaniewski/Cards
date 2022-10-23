@@ -3,6 +3,7 @@ const images = document.querySelectorAll('.image__container');
 images.forEach((el) => el.addEventListener('click', () => {
     removeClass()
     el.classList.add('active')
+    changeColor()
 }))
 
 function removeClass () {
@@ -15,7 +16,7 @@ function removeClass () {
 
 const roundNumbers = document.querySelectorAll('.roundNumbers');
 const buttons = document.querySelectorAll('.button')
-buttons.forEach((el) => {el.addEventListener('click', changeColor)})
+// buttons.forEach((el) => {el.addEventListener('click', changeColor)})
 
 function changeColor() {
     for( let i = 0; i < 5; i++){
